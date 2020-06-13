@@ -1,0 +1,17 @@
+workflows:
+  my-workflow:
+    name: My workflow name
+    max_build_duration: 60
+    environment:
+      npm: latest
+      xcode: latest
+    
+    scripts:
+      - npm install
+      - npm run ios
+    artifacts:
+      - build/*
+    publishing:
+      email:
+        recipients:
+          - vijayant.saini123@gmail.com
