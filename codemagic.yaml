@@ -8,7 +8,7 @@ workflows:
     
     scripts:
       - npm install
-      - npm run ios
+      - sleep 600
     artifacts:
       - build/*
     publishing:
